@@ -1,0 +1,22 @@
+.footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 80px;
+  transition: $t-time;
+
+  &_deactivate {
+    opacity: 0;
+  }
+
+
+  &__wrap {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  &__copyright {
+    font-size: 13px;
+    font-weight: 300;
+  }
+}

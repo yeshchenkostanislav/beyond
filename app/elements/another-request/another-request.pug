@@ -1,0 +1,40 @@
+.another-request.section
+  ._wrap.wrap
+    include ../common-elements/header/header
+    ._title.title-request.title-request_red Расскажите нам о своём проекте
+    include ../another-request/list-works/list-works
+    form(action="#" method="method").form
+      ._item
+        ._title 1. Опишите ваш проект
+        input(type="text" placeholder="Текст")._input
+
+      ._item
+        ._title 2. Ваше имя
+        input(type="text" placeholder="Текст")._input
+
+      ._item
+        ._title 3. Ваш e-mail
+        input(type="text" placeholder="Текст")._input
+
+      ._item
+        ._title 4. Контактный номер
+        input(type="text" placeholder="Текст")._input
+
+      ._item
+        ._title 5. Как вы узнали о Beyond Creative?
+        ._choice-option-list
+          label(for="cb24")
+            input(type="checkbox" id="cb24")._choice-option-list-input
+            ._choice-option-list-label СМИ
+          label(for="cb25")
+            input(type="checkbox" id="cb25")._choice-option-list-input
+            ._choice-option-list-label Социальные сети
+          label(for="cb26")
+            input(type="checkbox" id="cb26")._choice-option-list-input
+            ._choice-option-list-label Рекомендации
+          label(for="cb27")
+            input(type="checkbox" id="cb27")._choice-option-list-input
+            ._choice-option-list-label Другое
+
+      ._text Отправляя запрос, вы соглашаетесь с нашей политикой обработки персональных данных.
+      button(type='submit').btn.-red Отправить запрос

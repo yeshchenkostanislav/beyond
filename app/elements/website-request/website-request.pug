@@ -1,0 +1,82 @@
+.website-request.section
+  ._wrap.wrap
+    include ../common-elements/header/header
+    ._title.title-request.title-request_red Расскажите нам о своём проекте
+    include ../website-request/list-works/list-works
+    form(action="#" method="method").form
+      ._item
+        ._title 1. Опишите ваш проект
+        input(type="text" placeholder="Текст")._input
+
+      ._item
+        ._title 2. Какой тип сайта вам требуется?
+        ._choice-option-list
+          label(for="cb1")
+            input(type="checkbox" id="cb1")._choice-option-list-input
+            ._choice-option-list-label Лэндинг
+          label(for="cb2")
+            input(type="checkbox" id="cb2")._choice-option-list-input
+            ._choice-option-list-label Интернет магазин
+          label(for="cb3")
+            input(type="checkbox" id="cb3")._choice-option-list-input
+            ._choice-option-list-label Промо сайт
+          label(for="cb4")
+            input(type="checkbox" id="cb4")._choice-option-list-input
+            ._choice-option-list-label Другое
+
+      ._item
+        ._title 3. Какие сайты вам нравятся?
+        ._descr Укажите ссылки
+        input(type="text" placeholder="Текст")._input
+
+      ._item
+        ._title 4. Какие страницы/разделы должен содержать ваш сайт?
+        ._descr Например: Главная, О нас, Услуги, Блог, Контакты
+        input(type="text" placeholder="Текст")._input
+
+      ._item
+        ._title 5. Сколько языков должен поддерживать ваш сайт?
+        ._choice-option-list
+          label(for="cb5")
+            input(type="checkbox" id="cb5")._choice-option-list-input
+            ._choice-option-list-label Английский
+          label(for="cb6")
+            input(type="checkbox" id="cb6")._choice-option-list-input
+            ._choice-option-list-label Русский
+          label(for="cb7")
+            input(type="checkbox" id="cb7")._choice-option-list-input
+            ._choice-option-list-label Французский
+          label(for="cb8")
+            input(type="checkbox" id="cb8")._choice-option-list-input
+            ._choice-option-list-label Другой
+
+      ._item
+        ._title 6. Ваше имя
+        input(type="text" placeholder="Текст")._input
+
+      ._item
+        ._title 7. Ваш e-mail
+        input(type="text" placeholder="Текст")._input
+
+      ._item
+        ._title 8. Контактный номер
+        input(type="text" placeholder="Текст")._input
+
+      ._item
+        ._title 9. Как вы узнали о Beyond Creative?
+        ._choice-option-list
+          label(for="cb9")
+            input(type="checkbox" id="cb9")._choice-option-list-input
+            ._choice-option-list-label СМИ
+          label(for="cb10")
+            input(type="checkbox" id="cb10")._choice-option-list-input
+            ._choice-option-list-label Социальные сети
+          label(for="cb11")
+            input(type="checkbox" id="cb11")._choice-option-list-input
+            ._choice-option-list-label Рекомендации
+          label(for="cb12")
+            input(type="checkbox" id="cb12")._choice-option-list-input
+            ._choice-option-list-label Другое
+
+      ._text Отправляя запрос, вы соглашаетесь с нашей политикой обработки персональных данных.
+      button(type='submit').btn.-red Отправить запрос

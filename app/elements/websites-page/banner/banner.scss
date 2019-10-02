@@ -1,0 +1,12 @@
+.banner {
+  background: url(img/banner-bg.jpg)no-repeat center/cover;
+  margin: 60px 0 0 0;
+  min-height: 910px;
+
+  &__text {
+    color: #000000;
+    font-size: 60px;
+    font-weight: 700;
+    margin: 130px 0 0 0;
+  }
+}

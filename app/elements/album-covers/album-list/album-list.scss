@@ -1,0 +1,25 @@
+.album-list {
+  &__wrap {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 0 210px 0;
+  }
+
+  &__item {
+    margin: 50px 0 0 0;
+    max-width: 430px;
+    max-height: 430px;
+    overflow: hidden;
+
+    &:hover {
+      cursor: pointer;
+      opacity: 0.8;
+    }
+  }
+
+  &__img {
+    object-fit: contain;
+  }
+}

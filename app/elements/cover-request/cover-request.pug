@@ -1,0 +1,60 @@
+.cover-request.section
+  ._wrap.wrap
+    include ../common-elements/header/header
+    ._title.title-request.title-request_red Расскажите нам о своём проекте
+    include ../cover-request/list-works/list-works
+    form(action="#" method="method").form
+      ._item
+        ._title 1. Опишите ваш проект
+        input(type="text" placeholder="Текст")._input
+        
+      ._item
+        ._title 2. Отправьте вашу песню/альбом
+        ._descr Укажите ссылку или загрузите файл
+        ._list-files
+          ._list-files-item
+            input(type="text" placeholder="Текст")._input
+            ._list-files-item-add &#10010;
+
+      ._item
+        ._title 3. Имя артиста и название песни
+        input(type="text" placeholder="Текст")._input
+
+      ._item
+        ._title 4. Какие обложки вам нравятся?
+        ._descr Укажите ссылки или загрузите файл
+        ._list-files
+          ._list-files-item
+            input(type="text" placeholder="Текст")._input
+            ._list-files-item-add &#10010;
+        
+      ._item
+        ._title 5. Ваше имя
+        input(type="text" placeholder="Текст")._input
+        
+      ._item
+        ._title 6. Ваш e-mail
+        input(type="text" placeholder="Текст")._input
+
+      ._item
+        ._title 7. Контактный номер
+        input(type="text" placeholder="Текст")._input
+
+      ._item
+        ._title 8. Как вы узнали о Beyond Creative?
+        ._choice-option-list
+          label(for="cb12")
+            input(type="checkbox" id="cb12")._choice-option-list-input
+            ._choice-option-list-label СМИ
+          label(for="cb13")
+            input(type="checkbox" id="cb13")._choice-option-list-input
+            ._choice-option-list-label Социальные сети
+          label(for="cb14")
+            input(type="checkbox" id="cb14")._choice-option-list-input
+            ._choice-option-list-label Рекомендации
+          label(for="cb15")
+            input(type="checkbox" id="cb15")._choice-option-list-input
+            ._choice-option-list-label Другое
+
+      ._text Отправляя запрос, вы соглашаетесь с нашей политикой обработки персональных данных.
+      button(type='submit').btn.-red Отправить запрос

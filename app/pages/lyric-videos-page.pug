@@ -1,0 +1,12 @@
+doctype html
+html
+    include ../elements/head/head
+    +head('Page title', 'Page description', 'Page keywords')
+    body.websites-page
+        
+        include ../elements/common-elements/header/header
+        include ../elements/lyric-videos-page/list-works/list-works
+        include ../elements/lyric-videos-page/lyric-videos-list/lyric-videos-list
+
+        script(src="js/libs.min.js")
+        script(src="js/custom.js")
