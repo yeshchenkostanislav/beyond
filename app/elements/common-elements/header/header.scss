@@ -4,6 +4,7 @@
   right: 0;
   top: 140px;
   $root: &;
+  z-index: 100;
 
   @media(max-width: 1200px) {
     top: 70px;
