@@ -22,40 +22,88 @@
         <header class="header section">
             <div class="header__wrap wrap">
                 <div class="header__info">
-                    <div class="header__burger-btn"><span class="header__burger-btn-line"></span></div>
-                    <div class="header__logo">Beyond Creative</div>
+                    <div class="header__burger-btn"><span class="header__burger-btn-line"></span></div><a class="header__logo" href="index.html" title="title">Beyond Creative</a>
                 </div>
                 <div class="header__language-list"><a class="header__language-list-item header__language-list-item_active" href="#" title="title">RU</a><a class="header__language-list-item" href="#" title="title">EN </a></div>
             </div>
         </header>
         <div class="list-works section">
             <div class="list-works__wrap wrap">
-                <nav class="nav"><a class="nav__item" href="#" title="title">Websites</a><a class="nav__item nav__item_active" href="#" title="title">Lyric Videos</a><a class="nav__item" href="#" title="title">Album Covers</a><a class="nav__item" href="#" title="title">Posters</a>
-                    <div class="nav__bg-text">Lyric Videos</div>
+                <nav class="nav"><a class="nav__item" href="websites-page.html" title="title">Вебсайт</a><a class="nav__item nav__item_active" href="lyric-videos-page.html" title="title">Лирик видео</a><a class="nav__item" href="album-covers-page.html" title="title"> Обложка</a><a class="nav__item" href="posters-page.html" title="title">Афиша</a>
+                    <div class="nav__bg-text">Лирик видео</div>
                 </nav>
             </div>
         </div>
         <div class="lyric-videos-list section">
             <div class="lyric-videos-list__wrap wrap">
-                <div class="lyric-videos-list__item">
+                <div class="lyric-videos-list__item" data-modal=".modal-video">
                     <div class="lyric-videos-list__banner"><img class="lyric-videos-list__img" src="img/Mask_Group.png" alt="alt"></div>
                     <div class="lyric-videos-list__title">egor krid & valeriya</div>
                     <div class="lyric-videos-list__descr">Lyric Video / Russia / Singer</div>
                 </div>
-                <div class="lyric-videos-list__item">
+                <div class="lyric-videos-list__item" data-modal=".modal-video">
                     <div class="lyric-videos-list__banner"><img class="lyric-videos-list__img" src="img/Bye_Bye_thumbnail.png" alt="alt"></div>
                     <div class="lyric-videos-list__title">bye bye</div>
                     <div class="lyric-videos-list__descr">Social Media Content / Switzerland / Singer</div>
                 </div>
-                <div class="lyric-videos-list__item">
+                <div class="lyric-videos-list__item" data-modal=".modal-video">
                     <div class="lyric-videos-list__banner"><img class="lyric-videos-list__img" src="img/Mask_Group_17.png" alt="alt"></div>
                     <div class="lyric-videos-list__title">Love & Lover</div>
                     <div class="lyric-videos-list__descr">Social Media Content / Russia, USA, Romania / Singers</div>
                 </div>
-                <div class="lyric-videos-list__item">
+                <div class="lyric-videos-list__item" data-modal=".modal-video">
                     <div class="lyric-videos-list__banner"><img class="lyric-videos-list__img" src="img/maxresdefault.png" alt="alt"></div>
                     <div class="lyric-videos-list__title">Not baby</div>
                     <div class="lyric-videos-list__descr">Lyric Video / Russia / Singer</div>
+                </div>
+            </div>
+        </div>
+        <div class="modal modal-video">
+            <div class="modal__dialog">
+                <div class="modal__content">
+                    <div class="modal-content">
+                        <div class="modal-content__swiper-container swiper-container slider-modal">
+                            <div class="modal-content__swiper-wrapper swiper-wrapper">
+                                <div class="modal-content__swiper-slide swiper-slide">
+                                    <div class="modal-content__title">egor krid & valeriya</div>
+                                    <div class="modal-content__descr">Lyric Video / Russia / Singers </div>
+                                    <div class="content">
+                                        <div class="content__close-modal"> <svg class="icon-arrow content__arrow">
+                                                <use xlink:href="img/elements.svg#arrow"></use>
+                                            </svg>Back to Works</div>
+                                        <div class="content__container"><iframe class="content__iframe" src="https://www.youtube.com/embed/TUsGX0Fv6xg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                                    </div>
+                                </div>
+                                <div class="modal-content__swiper-slide swiper-slide">
+                                    <div class="modal-content__title">egor krid & valeriya</div>
+                                    <div class="modal-content__descr">Lyric Video / Russia / Singers </div>
+                                    <div class="content">
+                                        <div class="content__close-modal"> <svg class="icon-arrow content__arrow">
+                                                <use xlink:href="img/elements.svg#arrow"></use>
+                                            </svg>Back to Works</div>
+                                        <div class="content__container"><iframe class="content__iframe" src="https://www.youtube.com/embed/TUsGX0Fv6xg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="navigacion">
+                                <div class="info-prev-slide">
+                                    <div class="video-prev-slide">&lt;</div>
+                                    <div class="info-slide">
+                                        <div class="info-slide__text">Back project</div>
+                                        <div class="info-slide__slide-name">EGOR KRID</div>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                                <div class="info-next-slide">
+                                    <div class="info-slide">
+                                        <div class="info-slide__text">Next project</div>
+                                        <div class="info-slide__slide-name">LOVE & LOVER</div>
+                                    </div>
+                                    <div class="video-next-slide">&gt;</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

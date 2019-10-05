@@ -5,8 +5,18 @@
   top: 140px;
   $root: &;
 
+  @media(max-width: 1200px) {
+    top: 70px;
+  }
+
+  @media(max-width: 768px) {
+    top: 30px;
+  }
+
   &__wrap {
-    width: 1600px;
+    max-width: 1600px;
+    width: 100%;
+    padding: 0 15px;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -100,6 +110,11 @@
     font-family: "FavoritC";
     font-size: 29px;
     font-weight: 700;
+
+    &:hover {
+      text-decoration: none;
+    }
+
   }
 
   &__language-list {

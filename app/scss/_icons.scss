@@ -1,13 +1,16 @@
 .icon {
   display: inline-block;
+
   &.example-png-icon {
     background: url(img/icons/example.png);
     width: 30px;
     height: 30px;
   }
-  &-example-svg-icon {
-    width: 30px;
-    height: 30px;
-    fill: red;
+
+  //app/elements/modals/modal-video/svg-icons
+  &-arrow {
+    width: 22px;
+    height: 14px;
+    fill: #fff;
   }
 }

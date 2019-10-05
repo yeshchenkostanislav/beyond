@@ -1,0 +1,13 @@
+.website-request {
+  padding: 0 0 240px 0;
+  width: 100%;
+
+  @media(max-width: 768px) {
+    padding: 0 0 100px 0;
+  }
+
+  &__wrap {
+    max-width: 1400px;
+    width: 100%;
+  }
+}

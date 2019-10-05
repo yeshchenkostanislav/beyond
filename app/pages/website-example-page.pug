@@ -1,0 +1,15 @@
+doctype html
+html
+    include ../elements/head/head
+    +head('Page title', 'Page description', 'Page keywords')
+    body.websites-page
+        
+        include ../elements/common-elements/header/header
+        include ../elements/websites-page/list-works/list-works
+        include ../elements/website-example/banner/banner
+        include ../elements/website-example/descr-info/descr-info
+        include ../elements/website-example/website-example-slider/website-example-slider
+
+
+        script(src="js/libs.min.js")
+        script(src="js/custom.js")

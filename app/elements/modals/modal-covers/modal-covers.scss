@@ -1,0 +1,17 @@
+.modal-covers {
+  &__page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__img {
+    object-fit: contain;
+  }
+
+  .content {
+    &:before {
+      display: none;
+    }
+  }
+}
