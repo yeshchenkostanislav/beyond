@@ -4,6 +4,11 @@
   right: 0;
   bottom: 80px;
   transition: $t-time;
+  z-index: 100;
+
+  @media(max-width: 576px) {
+    display: none;
+  }
 
   &_deactivate {
     opacity: 0;

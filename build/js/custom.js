@@ -5,17 +5,24 @@ $('document').ready(function () {
     $('.main-index__wrap').toggleClass('main-index__wrap_active');
     $('.main-index').toggleClass('main-index_active');
     $('.footer').toggleClass('footer_deactivate');
-    $(this).toggleClass('header__burger-btn_active');
+    $('.header__burger-btn').toggleClass('header__burger-btn_active');
     if ($("div").is(".main-index__wrap_active")) {
-      $("body").css({
-        "overflow": "hidden"
-      });
+      if (getWindowWidth() >= 576) {
+        $("body").css({
+          "overflow": "hidden"
+        });
+      }
     } else {
       $("body").css({
         "overflow": "auto"
       });
     }
   });
+  /*   let mediaQuery = window.matchMedia('(max-width: 576px)');
+  if (mediaQuery.matches) {
+  let languageList = $(".header__language-list");
+  languageList.clone(true, true).appendTo(".main-index__page-list").toggleClass('header__language-list_active');
+  } */
   var modalVideo = new Kmodal('.modal-video');
   var modalCovers = new Kmodal('.modal-covers');
 
@@ -93,6 +100,9 @@ $('document').ready(function () {
   });
 
   $('.content__close-modal').on('click', function () {
+    $(".modal").siblings().css({
+      "filter": "blur(0)"
+    });
     $('.modal').removeClass('modal_active');
     $("body").css({
       "overflow": "auto"
@@ -100,11 +110,17 @@ $('document').ready(function () {
   });
 
   $('.lyric-videos-list__item').on('click', function () {
+    $(".modal").siblings().css({
+      "filter": "blur(10px)"
+    });
     $("body").css({
       "overflow": "hidden"
     });
   });
   $('.album-list__item').on('click', function () {
+    $(".modal").siblings().css({
+      "filter": "blur(10px)"
+    });
     $("body").css({
       "overflow": "hidden"
     });

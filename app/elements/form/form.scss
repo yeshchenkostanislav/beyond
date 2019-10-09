@@ -11,6 +11,10 @@
     @media(max-width: 768px) {
       margin: 30px 0 0 0;
     }
+
+    @media(max-width: 576px) {
+      margin: 70px 0 0 0;
+    }
   }
 
   &__title {
@@ -20,6 +24,10 @@
 
     @media(max-width: 768px) {
       font-size: 23px;
+    }
+
+    @media(max-width: 576px) {
+      font-size: 18px;
     }
   }
 
@@ -32,6 +40,11 @@
     @media(max-width: 768px) {
       margin: 10px 0 0 0;
       font-size: 20px;
+    }
+
+    @media(max-width: 576px) {
+      font-size: 14px;
+      padding: 0 0 0 20px;
     }
   }
 
@@ -50,6 +63,13 @@
       margin: 10px 0 0 30px;
       font-size: 20px;
     }
+
+    @media(max-width: 576px) {
+      margin: 30px 0 0 20px;
+      font-size: 14px;
+      width: 270px;
+      height: 30px;
+    }
   }
 
   &__choice-option-list {
@@ -62,6 +82,12 @@
     @media(max-width: 768px) {
       margin: 30px 0 0 30px;
     }
+
+    @media(max-width: 576px) {
+      font-size: 12px;
+      margin: 30px 0 0 20px;
+      max-width: 280px;
+    }
   }
 
   &__choice-option-list-label {
@@ -71,6 +97,11 @@
     width: 240px;
     height: 80px;
     border: 1px solid #ffffff;
+
+    @media(max-width: 576px) {
+      width: 139px;
+      height: 46px;
+    }
   }
 
   &__choice-option-list-input {
@@ -95,6 +126,13 @@
     @media(max-width: 768px) {
       margin: 50px 0 0 0;
     }
+
+    @media(max-width: 576px) {
+      margin: 60px 0 0 0;
+      padding: 0 0 0 20px;
+      font-size: 12px;
+      max-width: 270px;
+    }
   }
 
   &__list-files-item {
@@ -109,6 +147,9 @@
       }
     }
 
+    @media(max-width: 576px) {
+      margin: 30px 0 0 20px;
+    }
   }
 
   &__list-files-item-add {
@@ -123,8 +164,18 @@
     border-radius: 50%;
     border: 2px solid #ffffff;
 
+
     &:hover {
       cursor: pointer;
+    }
+
+    @media(max-width: 576px) {
+      width: 23px;
+      height: 23px;
+      font-size: 13px;
+      font-weight: 300;
+      right: 40px;
+      bottom: 7px;
     }
   }
 }

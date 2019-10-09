@@ -76,6 +76,9 @@ exampleSlider.on('slideChange', function () {
 
 
 $('.content__close-modal').on('click', function () {
+  $(".modal").siblings().css({
+    "filter": "blur(0)"
+  })
   $('.modal').removeClass('modal_active');
   $("body").css({
     "overflow": "auto"
@@ -83,11 +86,17 @@ $('.content__close-modal').on('click', function () {
 })
 
 $('.lyric-videos-list__item').on('click', function () {
+  $(".modal").siblings().css({
+    "filter": "blur(10px)"
+  })
   $("body").css({
     "overflow": "hidden"
   })
 })
 $('.album-list__item').on('click', function () {
+  $(".modal").siblings().css({
+    "filter": "blur(10px)"
+  })
   $("body").css({
     "overflow": "hidden"
   })

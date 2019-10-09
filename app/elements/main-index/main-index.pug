@@ -1,16 +1,22 @@
 .main-index.section
+  include ../common-elements/header/header
   ._wrap.wrap
     ._info
       nav._page-list
         a(href="#", title="title")._page-list-item О нас
         a(href="websites-page.html", title="title")._page-list-item Работы
-        a(href="website-request-page.html", title="title")._page-list-item Отправить запрос
+        a(href="website-request-page.html", title="title")._page-list-item 
+          span._page-list-item-word Отправить 
+          | бриф
+      .language-list.-active 
+        a(href="#", title="title")._item.-active RU
+        a(href="#", title="title")._item EN
       ._contact-information
         ._address
-          ._title.-red We Here
+          ._title.-red мы здесь
           ._address-info Moscow <br> 7 Ilyinka st., 109012
         ._connection
-          ._title.-red Questions?
+          ._title.-red вопросы?
           ._connection-list
             a(href="mailto:beyond@creative.com", title="mail")._connection-list-item beyond@creative.com
             a(href="tel:+79371409606", title="tel")._connection-list-item  +7 937 140 96 06

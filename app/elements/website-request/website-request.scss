@@ -6,8 +6,16 @@
     padding: 0 0 100px 0;
   }
 
+  @media(max-width: 576px) {
+    padding: 0;
+  }
+
   &__wrap {
     max-width: 1400px;
     width: 100%;
+
+    @media(max-width: 768px) {
+      width: 95%;
+    }
   }
 }
