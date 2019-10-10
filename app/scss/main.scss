@@ -52,7 +52,11 @@ input {
   align-items: flex-start;
   flex-direction: column;
   width: 1400px;
-  padding: 0 15px;
+  //padding: 0 15px;
+
+  @media (max-width: 1400px) {
+    padding: 0 15px;
+  }
 
   @media (max-width: 1199px) {
     width: 970px
@@ -63,14 +67,18 @@ input {
   }
 
   @media (max-width: 768px) {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  @media (max-width: 375px) {
     padding: 0;
-    width: 95%
   }
 }
 
 .websites-page {
   background: #000000;
-  padding: 215px 0 0 0;
+  padding: 270px 0 0 0;
 
   @media(max-width: 1200px) {
     padding: 150px 0 0 0;
@@ -81,7 +89,7 @@ input {
   }
 
   @media(max-width: 576px) {
-    padding: 130px 0 80px 0;
+    padding: 120px 0 80px 0;
   }
 
   .main-index {
@@ -109,7 +117,7 @@ input {
   max-width: 635px;
   line-height: 80px;
   width: 100%;
-  margin: 0 0 140px 0;
+  margin: 0 0 100px 0;
 
   @media(max-width: 1200px) {
     font-size: 50px;

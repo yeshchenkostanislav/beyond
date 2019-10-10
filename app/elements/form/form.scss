@@ -70,6 +70,23 @@
       width: 270px;
       height: 30px;
     }
+
+    &::placeholder {
+      opacity: 0.4;
+      color: #ffffff;
+      font-family: $base-font;
+      font-size: 24px;
+      font-weight: 300;
+      font-weight: 400;
+
+      @media(max-width: 992px) {
+        font-size: 20px;
+      }
+
+      @media(max-width: 576px) {
+        font-size: 16px;
+      }
+    }
   }
 
   &__choice-option-list {
@@ -111,8 +128,8 @@
       +#{$root} {
         &__choice-option-list-label {
           color: #fff;
-          background: red;
-          border: 1px solid red;
+          background-color: rgba(252, 30, 53, 0.95);
+          border: 1px solid rgba(252, 30, 53, 0.95);
         }
       }
     }
@@ -149,12 +166,13 @@
 
     @media(max-width: 576px) {
       margin: 30px 0 0 20px;
+      width: 270px;
     }
   }
 
   &__list-files-item-add {
     position: absolute;
-    right: 15px;
+    right: 10px;
     bottom: 15px;
     display: flex;
     align-items: center;
@@ -174,7 +192,6 @@
       height: 23px;
       font-size: 13px;
       font-weight: 300;
-      right: 40px;
       bottom: 7px;
     }
   }

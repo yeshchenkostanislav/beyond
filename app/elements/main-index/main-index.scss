@@ -12,13 +12,13 @@
     padding: 0;
   }
 
-  @media(max-width: 576px) {
+  @media(max-width: 768px) {
     padding: 200px 0 80px 10px;
     background: #000;
   }
 
   &_active {
-    @media(max-width: 576px) {
+    @media(max-width: 768px) {
       align-items: flex-start;
     }
 
@@ -35,6 +35,10 @@
     opacity: 0;
     display: none;
     transition: $t-time;
+
+    @media(max-width: 768px) {
+      max-width: none;
+    }
 
     &_active {
       opacity: 1;

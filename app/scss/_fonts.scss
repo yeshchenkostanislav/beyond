@@ -1,24 +1,32 @@
-//Gotham light
+//Gotham Thin
 @font-face {
   font-family: 'Gotham ';
-  src: url('../fonts/gotham/GothamPro-Light.ttf') format('truetype');
+  src: url('../fonts/gotham/Gotham-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+//Gotham rLight
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/gotham/GothamLight.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
 }
 
-//Gotham regular
+//Gotham Medium
 @font-face {
   font-family: 'Gotham';
-  src: url('../fonts/gotham/GothamPro.ttf') format('truetype');
-  font-weight: 400;
+  src: url('../fonts/gotham/GothamMedium.ttf') format('truetype');
+  font-weight: 500;
   font-style: normal;
 }
 
-//Gotham Bold
+//Gotham Book
 @font-face {
   font-family: 'Gotham';
-  src: url('../fonts/gotham/GothamPro-Bold.ttf') format('truetype');
-  font-weight: 700;
+  src: url('../fonts/gotham/GothamBook.ttf') format('truetype');
+  font-weight: 400;
   font-style: normal;
 }
 
