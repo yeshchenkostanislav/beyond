@@ -32,14 +32,13 @@
       @media(max-width: 1300px) {
         margin: 0;
       }
-    }
 
-    @media(max-width: 1200px) {
-      margin: 50px 0 0 0;
-    }
+      @media(max-width: 1200px) {
+        &:not(:first-child) {
+          margin: 70px 0 0 0;
+        }
 
-    @media(max-width: 992px) {
-      margin: 40px 0 0 0;
+      }
     }
 
     &:hover {
@@ -51,10 +50,6 @@
       margin: 130px 0 0 0;
 
       @media(max-width: 1200px) {
-        margin: 70px 0 0 0;
-      }
-
-      @media(max-width: 992px) {
         margin: 70px 0 0 0;
       }
     }

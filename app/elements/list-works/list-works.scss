@@ -11,6 +11,7 @@
     font-size: 28px;
     line-height: 140px;
     position: relative;
+    font-family: 'GothamThin';
 
     &:not(:last-child) {
       margin: 0 120px 0 0;
@@ -109,22 +110,16 @@
   @media(max-width: 992px) {
     width: 100%;
     justify-content: flex-start;
+    padding: 0 0 0 10px;
   }
 
   @media(max-width: 576px) {
     overflow-x: scroll;
-    padding: 0 0 0 10px;
+
   }
 
   &__wrap {
     padding: 0;
-    /*     @media(max-width: 1200px) {
-      padding: 0 15px;
-    }
-
-    @media(max-width: 576px) {
-      padding: 0;
-    } */
   }
 
   &_request {
